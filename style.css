@@ -1,0 +1,116 @@
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; 
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #c0392b;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  border: 1px solid #ddd; 
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  background-color: white; 
+  width: 400px; 
+  height: 450px; 
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.or-text {
+  font-size: 24px; 
+  font-weight: bold;
+  margin: 10px 0; 
+  color: #c0392b; 
+  text-align: center;
+  background-color: #c0392b; 
+}
+
+.card h3 {
+  font-size: 16px; 
+  margin-top: 5px; 
+  max-height: 30px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  color: #333; 
+}
+
+.voting-board {
+  margin: 40px auto; 
+  text-align: center;
+  padding: 20px; 
+  background-color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  width: 80%;
+}
+
+.voting-board h2 {
+  margin-bottom: 10px;
+  color: #c0392b; 
+}
+
+#vote-summary {
+  list-style: none;
+  padding: 0;
+}
+
+#vote-summary li {
+  margin: 10px 0; 
+  font-weight: bold;
+  background-color: #e9ecef; 
+  padding: 15px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s; 
+}
+
+#vote-summary li:hover {
+  background-color: #d3d3d3; 
+}
+.comparison-title {
+  text-align: center; 
+  font-size: 20px;
+  font-weight: bold; 
+  color: #c0392b; 
+  margin: 10px 0; 
+}
